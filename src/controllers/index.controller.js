@@ -4,11 +4,11 @@ new Pool({
     
 })
 
-const getUsers = (req,res) => {
-    res.send('users');
+const getEstudiante = (req,res) => {
+    res.send('Estudiante');
 }
 
 
 module.exports={
-    getUsers
+    getEstudiante
 }
