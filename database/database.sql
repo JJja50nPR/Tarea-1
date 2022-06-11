@@ -1,8 +1,8 @@
 CREATE DATABASE tarea1;
 
-\l
+\l   --Listar Base de datos
 
-\c tarea1;
+\c tarea1;  -- Conectar Base de datos creada
 
 CREATE TABLE Estudiante (
     id SERIAL PRIMARY KEY,
@@ -12,7 +12,7 @@ CREATE TABLE Estudiante (
     cod_provincia VARCHAR(10)
 );
 
-\dt
+\dt  --Listar las tablas
 
 CREATE TABLE provincia (
     id SERIAL PRIMARY KEY,
@@ -22,7 +22,8 @@ CREATE TABLE provincia (
 
 
 INSERT INTO estudiante (name, apellido, cedula, cod_provincia)
-    VALUES ('Alejandra', 'Benitez','1-1123-1123', 'CR-1');
+    VALUES ('Alejandra', 'Benitez','1-1123-1123', 'CR-1'),
+           ('Sofia', 'Vergara','1-1124-3423', 'CR-2');
 
     INSERT INTO provincia (name, cod_provincia)
     VALUES ('Cartago', 'CR-4');
